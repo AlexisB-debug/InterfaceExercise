@@ -40,38 +40,38 @@ namespace InterfaceExercise
 
             Car carLoneInstance = new Car()
             {
-                Year = "",
-                Make = "",
-                Model = "",
-                Engine = "",
-                CorporateNationality = "",
-                Headquarters = "",
+                Year = 1927,
+                Make = "Ford",
+                Model = "Model T",
+                Engine = "inline four-cylinder",
+                CorporateFounder = "Ford Motor Company: Henry Ford",
+                Headquarters = "1 American Road, Dearborn, MI 48126",
                 StickShift = true,
-                FuelOctaneGrade = ""
+                FuelOctaneGrade = "regular"
             };
 
             SUV sUVLoneInstance = new SUV()
             {
-                Year = "",
-                Make = ,
-                Model = ,
-                Engine = ,
-                CorporateNationality = ,
-                Headquarters = ,
-                Armored = ,
-                Terrain = 
+                Year = 2006,
+                Make = "Hummer (by General Motors)",
+                Model = "H3",
+                Engine = "inline five-cylinder",
+                CorporateFounder = "General Motors: Charles Stewart Mott & William C. Durant",
+                Headquarters = "100 Renaissance Center, Detroit, MI 48243",
+                Armored = false,
+                Terrain = "off-road terrain"
             };
 
             Truck truckLoneInstance = new Truck()
             {
-                Year = ,
-                Make = ,
-                Model = ,
-                Engine = ,
-                CorporateNationality = ,
-                Headquarters = ,
-                Fuel = ,
-                Wrecker = 
+                Year = 1939,
+                Make = "Dodge (by Chrysler)",
+                Model = "Pickup Truck",
+                Engine = "inline-six diesel engine",
+                CorporateFounder = "Chrysler: Walter Percy Chrysler\nDodge Brothers Company: Horace Elgin Dodge & John Francis Dodge",
+                Headquarters = "1000 Chrysler Dr, Auburn Hills, MI 48326",
+                Fuel = "Diesel",
+                Wrecker = false
             };
 
             //Option for displaying values: 
