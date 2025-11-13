@@ -15,6 +15,6 @@ public class Car : IVehicle, ICompany
 
     public void DisplayDetails()
     {
-        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder of {Make}: {CorporateFounder}\nHeadquarters: {Headquarters}\nStick Shift: {StickShift}\nFuel Grade: {FuelOctaneGrade}");
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder: {CorporateFounder}\nHeadquarters: {Headquarters}\nStick Shift: {StickShift}\nFuel Grade: {FuelOctaneGrade}");
     }
 }

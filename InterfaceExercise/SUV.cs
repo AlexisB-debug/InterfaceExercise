@@ -15,6 +15,6 @@ public class SUV : IVehicle, ICompany
     
     public void DisplayDetails()
     {
-        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder of {Make}: {CorporateFounder}\nHeadquarters: {Headquarters}\nArmored: {Armored}\nTerrain: {Terrain}");
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder: {CorporateFounder}\nHeadquarters: {Headquarters}\nArmored: {Armored}\nTerrain: {Terrain}");
     }
 }

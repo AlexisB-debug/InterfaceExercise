@@ -51,7 +51,7 @@ namespace InterfaceExercise
                 FuelOctaneGrade = "regular"
             };
 
-            SUV sUVLoneInstance = new SUV()
+            SUV suvLoneInstance = new SUV()
             {
                 Year = 2006,
                 Make = "Hummer (by General Motors)",
@@ -81,8 +81,8 @@ namespace InterfaceExercise
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
             
-            carLoneInstance.DisplayDetails;
-            sUVLoneInstance.DisplayDetails();
+            carLoneInstance.DisplayDetails();
+            suvLoneInstance.DisplayDetails();
             truckLoneInstance.DisplayDetails();
         }
     }

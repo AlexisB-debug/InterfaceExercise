@@ -10,11 +10,11 @@ public class Truck : IVehicle, ICompany
     public string Engine { get; set; }
     public string CorporateFounder { get; set; }
     public string Headquarters { get; set; }
-    public string Fuel { get; set; } // "Gasoline", "Diesel"
+    public string Fuel { get; set; } // "Petrol", "Diesel"
     public bool Wrecker { get; set; }
     
     public void DisplayDetails()
     {
-        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder of {Make}: {CorporateFounder}\nHeadquarters: {Headquarters}\nFuel: {Fuel}\nWrecker: {Wrecker}");
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder: {CorporateFounder}\nHeadquarters: {Headquarters}\nFuel: {Fuel}\nWrecker: {Wrecker}");
     }
 }
