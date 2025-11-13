@@ -13,8 +13,13 @@ public class Truck : IVehicle, ICompany
     public string Fuel { get; set; } // "Petrol", "Diesel"
     public bool Wrecker { get; set; }
     
-    public void DisplayDetails()
+    public void DisplayDetails_IVehicle()
     {
-        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder: {CorporateFounder}\nHeadquarters: {Headquarters}\nFuel: {Fuel}\nWrecker: {Wrecker}");
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFuel: {Fuel}\nWrecker: {Wrecker}");
+    }
+    
+    public void DisplayDetails_ICompany()
+    {
+        Console.WriteLine($"Founder: {CorporateFounder}\nHeadquarters: {Headquarters}");
     }
 }

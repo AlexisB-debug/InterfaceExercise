@@ -12,9 +12,14 @@ public class SUV : IVehicle, ICompany
     public string Headquarters { get; set; }
     public bool Armored { get; set; }
     public string Terrain { get; set; }
-    
-    public void DisplayDetails()
+
+    public void DisplayDetails_IVehicle()
     {
-        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder: {CorporateFounder}\nHeadquarters: {Headquarters}\nArmored: {Armored}\nTerrain: {Terrain}");
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nArmored: {Armored}\nTerrain: {Terrain}");
+    }
+    
+    public void DisplayDetails_ICompany()
+    {
+        Console.WriteLine($"Founder: {CorporateFounder}\nHeadquarters: {Headquarters}");
     }
 }

@@ -81,9 +81,12 @@ namespace InterfaceExercise
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
             
-            carLoneInstance.DisplayDetails();
-            suvLoneInstance.DisplayDetails();
-            truckLoneInstance.DisplayDetails();
+            carLoneInstance.DisplayDetails_IVehicle();
+            carLoneInstance.DisplayDetails_ICompany();
+            suvLoneInstance.DisplayDetails_IVehicle();
+            suvLoneInstance.DisplayDetails_ICompany();
+            truckLoneInstance.DisplayDetails_IVehicle();
+            truckLoneInstance.DisplayDetails_ICompany();
         }
     }
 }

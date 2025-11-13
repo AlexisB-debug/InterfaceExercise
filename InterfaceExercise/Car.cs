@@ -13,8 +13,13 @@ public class Car : IVehicle, ICompany
     public bool StickShift { get; set; }
     public string FuelOctaneGrade { get; set; } // "regular", "mid-grade", "premium"
 
-    public void DisplayDetails()
+    public void DisplayDetails_IVehicle()
     {
-        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder: {CorporateFounder}\nHeadquarters: {Headquarters}\nStick Shift: {StickShift}\nFuel Grade: {FuelOctaneGrade}");
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nStick Shift: {StickShift}\nFuel Grade: {FuelOctaneGrade}");
+    }
+
+    public void DisplayDetails_ICompany()
+    {
+        Console.WriteLine($"Founder: {CorporateFounder}\nHeadquarters: {Headquarters}");
     }
 }
