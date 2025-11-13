@@ -37,13 +37,49 @@ namespace InterfaceExercise
 
             //Now, create objects of your 3 classes and give their members values.
             //Creatively display and organize their values
-            
+
+            Car carLoneInstance = new Car()
+            {
+                Year = "",
+                Make = "",
+                Model = "",
+                Engine = "",
+                CorporateNationality = "",
+                Headquarters = "",
+                StickShift = true,
+                FuelOctaneGrade = ""
+            };
+
+            SUV sUVLoneInstance = new SUV()
+            {
+                Year = "",
+                Make = ,
+                Model = ,
+                Engine = ,
+                CorporateNationality = ,
+                Headquarters = ,
+                Armored = ,
+                Terrain = 
+            };
+
+            Truck truckLoneInstance = new Truck()
+            {
+                Year = ,
+                Make = ,
+                Model = ,
+                Engine = ,
+                CorporateNationality = ,
+                Headquarters = ,
+                Fuel = ,
+                Wrecker = 
+            };
+
             //Option for displaying values: 
             //Create a stubbed out method called DisplayDetails in your IVehicle interface.
             //Implement the stubbed out method in the derived classes.
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
-            
+
         }
     }
 }
