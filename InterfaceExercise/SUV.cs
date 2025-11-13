@@ -1,3 +1,5 @@
+using System;
+
 namespace InterfaceExercise;
 
 public class SUV : IVehicle, ICompany
@@ -10,4 +12,9 @@ public class SUV : IVehicle, ICompany
     public string Headquarters { get; set; }
     public bool Armored { get; set; }
     public string Terrain { get; set; }
+    
+    public void DisplayDetails()
+    {
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder of {Make}: {CorporateFounder}\nHeadquarters: {Headquarters}\nArmored: {Armored}\nTerrain: {Terrain}");
+    }
 }

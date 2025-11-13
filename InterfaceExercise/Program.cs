@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace InterfaceExercise
 {
@@ -79,7 +80,10 @@ namespace InterfaceExercise
             //Implement the stubbed out method in the derived classes.
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
-
+            
+            carLoneInstance.DisplayDetails;
+            sUVLoneInstance.DisplayDetails();
+            truckLoneInstance.DisplayDetails();
         }
     }
 }

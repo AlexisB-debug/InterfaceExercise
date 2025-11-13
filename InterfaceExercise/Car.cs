@@ -1,3 +1,5 @@
+using System;
+
 namespace InterfaceExercise;
 
 public class Car : IVehicle, ICompany
@@ -10,4 +12,9 @@ public class Car : IVehicle, ICompany
     public string Headquarters { get; set; }
     public bool StickShift { get; set; }
     public string FuelOctaneGrade { get; set; } // "regular", "mid-grade", "premium"
+
+    public void DisplayDetails()
+    {
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder of {Make}: {CorporateFounder}\nHeadquarters: {Headquarters}\nStick Shift: {StickShift}\nFuel Grade: {FuelOctaneGrade}");
+    }
 }

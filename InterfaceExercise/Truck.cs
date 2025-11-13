@@ -1,3 +1,5 @@
+using System;
+
 namespace InterfaceExercise;
 
 public class Truck : IVehicle, ICompany
@@ -10,4 +12,9 @@ public class Truck : IVehicle, ICompany
     public string Headquarters { get; set; }
     public string Fuel { get; set; } // "Gasoline", "Diesel"
     public bool Wrecker { get; set; }
+    
+    public void DisplayDetails()
+    {
+        Console.WriteLine($"{Year} {Make} {Model}\nEngine: {Engine}\nFounder of {Make}: {CorporateFounder}\nHeadquarters: {Headquarters}\nFuel: {Fuel}\nWrecker: {Wrecker}");
+    }
 }
